@@ -1,0 +1,36 @@
+[13-Sep-2025 00:56:00 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/rtmzapkxrlpa/public_html/wp-content/plugins/give/src/FeatureFlags/OptionBasedFormEditor/Settings/AbstractOptionBasedFormEditorSettings.php on line 57
+[13-Sep-2025 18:28:42 UTC] PHP Warning:  Array to string conversion in /home/rtmzapkxrlpa/public_html/wp-content/plugins/the-events-calendar/src/Tribe/Ignored_Events.php on line 193
+[13-Sep-2025 18:51:34 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/rtmzapkxrlpa/public_html/wp-content/themes/astra-child-kegm/functions.php on line 96
+[13-Sep-2025 18:51:38 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/rtmzapkxrlpa/public_html/wp-content/themes/astra-child-kegm/functions.php on line 96
+[13-Sep-2025 23:57:36 UTC] WordPress database error Table 'wpwj_kboard_board_option' already exists for query CREATE TABLE `wpwj_kboard_board_option` (
+	`uid` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+	`content_uid` bigint(20) unsigned NOT NULL,
+	`option_key` varchar(127) NOT NULL,
+	`option_value` longtext NOT NULL,
+	PRIMARY KEY (`uid`),
+	KEY `content_uid` (`content_uid`),
+	KEY `option_key` (`option_key`)
+	) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci; made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, kboard_update_check, kboard_activation_execute
+[13-Sep-2025 23:57:36 UTC] WordPress database error Table 'wpwj_kboard_board_meta' already exists for query CREATE TABLE `wpwj_kboard_board_meta` (
+	`board_id` bigint(20) unsigned NOT NULL,
+	`key` varchar(127) NOT NULL,
+	`value` longtext NOT NULL,
+	UNIQUE KEY `meta_index` (`board_id`,`key`),
+	KEY `key` (`key`)
+	) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci; made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, kboard_update_check, kboard_activation_execute
+[13-Sep-2025 23:57:36 UTC] WordPress database error Table 'wpwj_kboard_board_latestview_link' already exists for query CREATE TABLE `wpwj_kboard_board_latestview_link` (
+	`latestview_uid` bigint(20) unsigned NOT NULL,
+	`board_id` bigint(20) unsigned NOT NULL,
+	UNIQUE KEY `latestview_uid` (`latestview_uid`,`board_id`)
+	) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci; made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, kboard_update_check, kboard_activation_execute
+[18-Sep-2025 00:56:13 UTC] PHP Warning:  Undefined array key "payload" in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/modules/ai/module.php on line 617
+[22-Sep-2025 17:56:46 UTC] PHP Warning:  Undefined array key "mega-menu" in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/modules/ai/connect/ai.php on line 794
+[22-Sep-2025 17:56:46 UTC] PHP Warning:  Undefined array key "mega-menu" in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/modules/ai/connect/ai.php on line 794
+[22-Sep-2025 17:56:46 UTC] PHP Warning:  Undefined array key "mega-menu" in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/modules/ai/connect/ai.php on line 794
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
+[22-Sep-2025 18:45:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/rtmzapkxrlpa/public_html/wp-content/plugins/elementor/includes/managers/image.php on line 113
