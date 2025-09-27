@@ -1,0 +1,163 @@
+
+
+/*
+ * 예배 안내
+ * 
+/* text color of first column of 정기예배 table*/
+.worship-schedule table tbody td:first-child {
+  color: #4682B4;
+	font-weight: 600;
+}
+/*font size of table*/
+.worship-schedule table {
+  font-size: 19px;
+}
+
+
+
+ /* just for test */
+
+/*hero banner*/
+.hero-banner-2025{
+  position: relative;
+  width: 100%;
+  min-height: 60vh;              /* 배너 높이: 화면 60% */
+  display: grid;
+  place-items: center;           /* 중앙 정렬 */
+  padding: clamp(24px, 4vw, 64px);
+  color: #fff;
+  text-align: center;
+  isolation: isolate;            /* overlay 레이어 분리 */
+
+  /* 배경 이미지 */
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
+    ),
+    url("http://test-kegm.org/wp-content/uploads/2025/09/mainpage_3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,.15);
+}
+
+/* 내용 래퍼 */
+.hero-banner-2025 .hero-inner{
+  max-width: min(1100px, 92vw);
+}
+
+/* 작은 머리말 */
+.hero-banner-2025 .hero-eyebrow{
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  opacity: .95;
+  font-size: clamp(12px, 2.2vw, 16px);
+}
+
+
+/* 메인 제목 */
+.hero-banner-2025 .hero-title{
+  margin: 0 0 10px;
+  line-height: 1.15;
+  font-weight: 800;
+  /* 모바일~데스크톱 가변 폰트 크기 */
+  font-size: clamp(22px, 5vw, 44px);
+  text-wrap: balance;
+  text-shadow: 0 2px 10px rgba(0,0,0,0);
+}
+
+.hero-banner-2025 .hero-verse{
+  font-weight: 600;
+  opacity: .95;
+  margin-left: .35em;
+  white-space: nowrap;
+  font-size: .8em;
+}
+
+/* 부제 (독일어) */
+.hero-banner-2025 .hero-subtitle{
+  margin: 8px 0 0;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: clamp(16px, 3.2vw, 22px);
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+.hero-banner-2025 .hero-title{
+  color: #ffffff;                /* 완전 흰색 */
+  font-weight: 900;              /* 두껍게 */
+  text-shadow: 0 3px 12px rgba(0,0,0,.6); /* 강한 그림자 */
+}
+
+.hero-banner-2025 .hero-subtitle,
+.hero-banner-2025 .hero-eyebrow{
+  color: #f5f5f5;                /* 밝은 회색 */
+  text-shadow: 0 2px 8px rgba(0,0,0,.55);
+}
+
+/* buttons*/
+/* 레이아웃 */
+.kegm-two-col{
+  max-width:1200px; margin:28px auto; padding:0 16px;
+  display:flex; gap:24px; align-items:stretch;
+}
+.kegm-two-col > *{ margin:0 !important; }
+.kegm-col-left{  flex:1 1 50%; min-width:0; display:flex; }
+.kegm-col-right{ flex:1 1 50%; min-width:0; display:flex; }
+
+/* 카드 높이 동일 */
+.schedule-card{ height:100%; }
+
+/* 예배 카드 */
+.schedule-card{
+  background:#fff; border-radius:16px; border:1px solid rgba(2,6,23,.06);
+  box-shadow:0 10px 32px rgba(0,0,0,.08);
+  padding:clamp(20px, 3.2vw, 32px);
+}
+.schedule-card h2{ margin:0 0 14px; font-size:clamp(22px,3.4vw,28px); font-weight:500; color:#0f172a; }
+
+.slots{ list-style:none; margin:0; padding:4px 0 0; }
+.slot{ display:grid; grid-template-columns:1fr auto; gap:8px 120px;
+       padding:16px 0; border-top:1px solid rgba(2,6,23,.06); }
+.slot:first-child{ border-top:0; }
+.slot-title{ margin:0; font-weight:500; color:#111827; }
+.meta{ margin:0; display:flex; flex-wrap:wrap; gap:8px; }
+.chip{ display:inline-flex; align-items:center; gap:6px; padding:6px 10px;
+       border-radius:999px; font-weight:700; font-size:14px; border:1px solid transparent; }
+.chip.time{   background:#e8f0fe; color:#0b5bd3; border-color:#c7dafc; }
+.chip.place{  background:#ecfdf5; color:#047857; border-color:#bbf7d0; }
+.chip.online{ background:#f5f3ff; color:#6d28d9; border-color:#ddd6fe; }
+
+/* 버튼 2×2 카드 */
+
+.kegm-cards{
+  list-style:none; margin:0; padding:0;
+  display:grid; grid-template-columns:repeat(2, minmax(200px,1fr));
+  gap:25px; height:95%; grid-auto-rows:1fr; align-content:stretch;
+}
+.kegm-cards li a{
+  display:flex; align-items:center; justify-content:center;
+  height:96%; padding:12px 16px;
+  background:#fff; color:#1f2937; font-weight:500; font-size:25px; text-decoration:none !important;
+  border-radius:14px; border:1px solid rgba(2,6,23,.06);
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+  transition:transform .15s ease, box-shadow .15s ease, background .2s ease, color .2s ease;
+}
+.kegm-cards li a:hover{ background:#e8f0fe; color:#0b5bd3; transform:translateY(-2px);
+                        box-shadow:0 12px 28px rgba(0,0,0,.12); }
+.kegm-cards li a:focus-visible{ outline:3px solid #1e88e5; outline-offset:3px; }
+
+/* 모바일 */
+@media (max-width:900px){
+  .kegm-two-col{ flex-direction:column; }
+  .schedule-card, .kegm-quick-row{ height:auto; }
+  .kegm-cards{ grid-template-columns:1fr; }
+  .kegm-cards li a{ min-height:64px; font-size:16px; }
+  .slot{ grid-template-columns:1fr; }
+  .meta{ margin-top:4px; }
+}
+
